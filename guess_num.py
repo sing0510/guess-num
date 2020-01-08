@@ -1,12 +1,14 @@
 import random
-r = random.randint(1, 2)
-print(r)
+r = random.randint(1, 100)
 while True:
-	a = input('請輸入')
-	a = int(a)
-	if r == a:
+	num = input(' 請輸入數字: ')
+	num = int(num)
+	if r == num:
 		print('你猜對了')
 		break
-	else:
-		print('再猜')
+	elif num > r :
+		print('太大了,請再猜')
+	elif num < r :
+		print('太小了,再猜')
+
 
